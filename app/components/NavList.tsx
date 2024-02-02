@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { HamburgerMenuIcon, Cross1Icon } from '@radix-ui/react-icons';
 import Button from './Button';
+import { usePathname } from 'next/navigation';
 
 const list = [
   { id: 1, label: 'Home', path: '/' },
@@ -13,13 +14,19 @@ const list = [
 
 const NavList = () => {
   const [showNav, setShowNav] = useState(false);
+  const path = usePathname();
 
   return (
     <>
       <div className="flex gap-10 items-center justify-items-center">
         <ul className="hidden md:flex items-center gap-5">
           {list.map((item) => (
-            <li key={item.id}>
+            <li
+              key={item.id}
+              className={`transition-all ${
+                path === item.path ? 'text-white' : 'text-[coral]'
+              } hover:text-white`}
+            >
               <Link href={item.path}>{item.label}</Link>
             </li>
           ))}
@@ -65,9 +72,14 @@ const NavList = () => {
                 )}
               </button>
             </div>
-            <ul className="flex flex-col items-center justify-center h-full gap-5 -mt-10">
+            <ul className="flex flex-col items-start justify-center h-full gap-5 px-5 -mt-10">
               {list.map((item) => (
-                <li key={item.id} className="text-4xl">
+                <li
+                  key={item.id}
+                  className={`transition-all text-5xl  ${
+                    path === item.path ? 'text-white' : 'text-[coral]'
+                  } hover:text-white`}
+                >
                   <Link href={item.path}>{item.label}</Link>
                 </li>
               ))}

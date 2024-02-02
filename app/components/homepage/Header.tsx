@@ -11,12 +11,12 @@ const Header = () => {
   return (
     <header
       style={{ backgroundImage: `url(${headerImage.src})` }}
-      className="bg-cover bg-bottom bg-fixed"
+      className="bg-fill bg-fixed bg-bottom"
     >
       <Container>
-        <main className="grid place-items-center md:h-[40rem] h-screen text-center">
+        <main className="grid place-items-center h-screen md:h-[40rem] text-center">
           <h1
-            className={`bg-[#f8f8ff] p-8 md:p-5 blur-0 text-4xl md:text-5xl capitalize text-primary-100 flex flex-col md:flex-row gap-2 md:gap-8  ${architects_daughter.className}`}
+            className={`p-8 md:p-5 blur-0 text-5xl md:text-5xl capitalize text-white flex flex-col md:flex-row gap-2 md:gap-8  ${architects_daughter.className}`}
           >
             <span>Inspiration</span> <span>Balance</span> <span>Harmony</span>
           </h1>

@@ -9,8 +9,8 @@ const Logo = () => {
   return (
     <span className={architects_daughter.className}>
       <Link href="/">
-        <div className="border text-xl border-white py-2 justify-center items-center px-5">
-          <span>Bennie Perez Design</span>
+        <div className="bg-white text-primary-100 text-xl rounded border-white py-2 justify-center items-center px-4 uppercase">
+          <span>Bennie Perez</span>
         </div>
       </Link>
     </span>
