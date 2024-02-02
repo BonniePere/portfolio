@@ -43,13 +43,13 @@ const About = () => {
         </article>
       </div>
 
-      <figure className="relative h-[35rem]">
+      <figure className="relative h-[25rem] md:h-[35rem]">
         <span className="absolute top-[80%] left-[50%] translate-x-[-50%] p-2 bg-black text-white text-5xl opacity-50">
           <span className="hidden md:block">
             <Logo size={2} />
           </span>
           <span className="block md:hidden">
-            <Logo size={1} />
+            <Logo size={1.2} />
           </span>
         </span>
         <Image
