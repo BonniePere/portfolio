@@ -1,22 +1,43 @@
 import React from 'react';
-import Container from './Container';
 import Logo from './Logo';
 import Link from 'next/link';
 import moment from 'moment';
+import Container from './Container';
 
-const list = [
+import {
+  FaXTwitter,
+  FaFacebook,
+  FaLinkedinIn,
+  FaInstagram,
+} from 'react-icons/fa6';
+
+const navigationList = [
   { id: 1, label: 'Home', path: '/' },
   { id: 2, label: 'Gallery', path: '/gallery' },
   { id: 3, label: 'Contact', path: '/contact' },
 ];
 
+const contactList = [
+  { id: 1, path: '+2347000000000', prefix: 'tel:' },
+  { id: 2, path: 'someone@somewhere.com', prefix: 'mailto:' },
+];
+
+const socialList = [
+  { id: 1, icon: <FaXTwitter />, path: '' },
+  { id: 2, icon: <FaFacebook />, path: '' },
+  { id: 3, icon: <FaLinkedinIn />, path: '' },
+  { id: 4, icon: <FaInstagram />, path: '' },
+];
+
 const Footer = () => {
   return (
-    <footer>
+    <footer className="bg-primary-100 pt-10 text-white">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-[40fr_20fr_20fr_20fr] gap-10">
-          <div className="grid gap-2">
-            <Logo />
+          <div className="grid gap-5">
+            <div className="flex">
+              <Logo />
+            </div>
 
             <p className="max-w-[35ch]">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
@@ -25,10 +46,10 @@ const Footer = () => {
           </div>
 
           <article className="grid gap-4">
-            <h3 className="text-lg uppercase">Quick links</h3>
+            <h3 className="text-lg uppercase">Navigation</h3>
             <ul className="flex flex-col gap-3">
-              {list.map((item) => (
-                <li key={item.id}>
+              {navigationList.map((item) => (
+                <li key={item.id} className="hover:text-white transition-all">
                   <Link href={item.path}>{item.label}</Link>
                 </li>
               ))}
@@ -38,20 +59,20 @@ const Footer = () => {
           <article className="grid gap-4">
             <h3 className="text-lg uppercase">Socials</h3>
             <ul className="flex flex-col gap-3">
-              {list.map((item) => (
-                <li key={item.id}>
-                  <Link href={item.path}>{item.label}</Link>
+              {socialList.map((item) => (
+                <li key={item.id} className=" hover:text-white transition-all">
+                  <Link href={item.path}>{item.icon}</Link>
                 </li>
               ))}
             </ul>
           </article>
 
-          <article className="grid gap-4">
-            <h3 className="text-lg uppercase">Contact</h3>
-            <ul className="flex flex-col gap-3">
-              {list.map((item) => (
-                <li key={item.id}>
-                  <Link href={item.path}>{item.label}</Link>
+          <article className="flex flex-col gap-4">
+            <h3 className="text-lg uppercase mb-0">Contact</h3>
+            <ul className="flex flex-col gap-2 justify-start">
+              {contactList.map((item) => (
+                <li key={item.id} className=" hover:text-white transition-all">
+                  <Link href={item.prefix + item.path}>{item.path}</Link>
                 </li>
               ))}
             </ul>

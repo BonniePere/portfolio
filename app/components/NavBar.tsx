@@ -4,7 +4,7 @@ import NavList from './NavList';
 
 const NavBar = () => {
   return (
-    <nav className="">
+    <nav className="bg-primary-100 text-white">
       <Container>
         <div className="flex items-center justify-between py-5">
           <Logo />
