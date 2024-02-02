@@ -32,7 +32,7 @@ const NavList = () => {
             type="button"
             title="contact"
           >
-            Let's talk
+            Let&apos;s talk
           </Button>
         </Link>
       </div>
@@ -80,7 +80,7 @@ const NavList = () => {
                   type="button"
                   title="contact"
                 >
-                  Let's talk
+                  Let&apos;s talk
                 </Button>
               </Link>
             </ul>
