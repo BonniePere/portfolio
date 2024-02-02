@@ -15,11 +15,18 @@ const Header = () => {
     >
       <Container>
         <main className="grid place-items-center h-screen md:h-[40rem] text-center">
-          <h1
-            className={`p-8 md:p-5 blur-0 text-5xl md:text-5xl capitalize text-white flex flex-col md:flex-row gap-2 md:gap-8  ${architects_daughter.className}`}
-          >
-            <span>Inspiration</span> <span>Balance</span> <span>Harmony</span>
-          </h1>
+          <article className="grid gap-2 text-white">
+            <span>Interior Decorator</span>
+            <h1
+              className={`p-8 md:p-5 blur-0 text-4xl md:text-5xl flex flex-col md:flex-row gap-1 md:gap-8 uppercase leading-[25px] font-bold`}
+            >
+              <span>Inspiration</span>
+              <span>&middot;</span>
+              <span>Balance</span>
+              <span>&middot;</span>
+              <span>Harmony</span>
+            </h1>
+          </article>
         </main>
       </Container>
     </header>

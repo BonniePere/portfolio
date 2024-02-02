@@ -41,10 +41,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-[40fr_20fr_20fr_20fr] gap-10">
           <div className="grid gap-5">
             <div className="flex">
-              <Logo />
+              <Logo size={2} />
             </div>
 
-            <p className="max-w-[35ch] text-[#fc8f68]">
+            <p className="max-w-[35ch] text-[#666]">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
               mollitia esse sunt aliquid! Cumque, animi?
             </p>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <li
                   key={item.id}
                   className={`transition-all ${
-                    path === item.path ? 'text-white' : 'text-[#fc8f68]'
+                    path === item.path ? 'text-white' : 'text-[#666]'
                   } hover:text-white`}
                 >
                   <Link href={item.path}>{item.label}</Link>
@@ -72,7 +72,7 @@ const Footer = () => {
               {socialList.map((item) => (
                 <li
                   key={item.id}
-                  className="text-[#fc8f68] hover:text-white transition-all"
+                  className="text-[#666] hover:text-white transition-all"
                 >
                   <Link href={item.path}>{item.icon}</Link>
                 </li>
@@ -86,7 +86,7 @@ const Footer = () => {
               {contactList.map((item) => (
                 <li
                   key={item.id}
-                  className="text-[#fc8f68] hover:text-white transition-all"
+                  className="text-[#666] hover:text-white transition-all"
                 >
                   <Link href={item.prefix + item.path}>{item.path}</Link>
                 </li>
@@ -94,7 +94,7 @@ const Footer = () => {
             </ul>
           </article>
         </div>
-        <div className="text-center border-t border-[#fc8f68] text-[#fc8f68] py-5 mt-10">
+        <div className="text-center border-t border-[#333] text-[#666] py-5 mt-10">
           Copyright &copy; {moment().format('Y')} - Bonnie M. Perez
         </div>
       </Container>

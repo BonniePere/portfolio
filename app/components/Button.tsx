@@ -27,7 +27,7 @@ const Button = ({
 
   if (variation === 'fill') {
     if (colorScheme === 'primary') {
-      variationStyle = 'text-white bg-blue-500 hover:bg-blue-600';
+      variationStyle = 'text-white bg-primary-100 hover:bg-[#333]';
     }
     if (colorScheme === 'secondary') {
       variationStyle = 'text-white bg-coral-500 hover:bg-coral-600';

@@ -1,16 +1,25 @@
-import { Architects_Daughter } from 'next/font/google';
+import { Sacramento } from 'next/font/google';
 import Link from 'next/link';
-const architects_daughter = Architects_Daughter({
+const architects_daughter = Sacramento({
   subsets: ['latin'],
   weight: '400',
 });
 
-const Logo = () => {
+interface Props {
+  size?: number;
+}
+
+const Logo = ({ size }: Props) => {
   return (
     <span className={architects_daughter.className}>
       <Link href="/">
-        <div className="bg-white text-primary-100 text-xl rounded border-white py-2 justify-center items-center px-4 uppercase">
-          <span>Bennie Perez</span>
+        <div
+          style={{
+            fontSize: `${size || 2}rem`,
+          }}
+          className="text-white justify-center items-center"
+        >
+          <span>BenniePerez</span>
         </div>
       </Link>
     </span>

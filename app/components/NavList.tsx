@@ -24,7 +24,7 @@ const NavList = () => {
             <li
               key={item.id}
               className={`transition-all ${
-                path === item.path ? 'text-white' : 'text-[coral]'
+                path === item.path ? 'text-white' : 'text-[#666]'
               } hover:text-white`}
             >
               <Link href={item.path}>{item.label}</Link>
@@ -77,7 +77,7 @@ const NavList = () => {
                 <li
                   key={item.id}
                   className={`transition-all text-5xl  ${
-                    path === item.path ? 'text-white' : 'text-[coral]'
+                    path === item.path ? 'text-white' : 'text-[#666]'
                   } hover:text-white`}
                 >
                   <Link href={item.path}>{item.label}</Link>
