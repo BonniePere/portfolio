@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
 
           <article className="grid gap-4">
-            <h3 className="text-lg uppercase">Navigation</h3>
+            <h3 className="text-lg uppercase">Pages</h3>
             <ul className="flex flex-col gap-3">
               {navigationList.map((item) => (
                 <li

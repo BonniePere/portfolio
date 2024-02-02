@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header
       style={{ backgroundImage: `url(${headerImage.src})` }}
-      className="bg-fill bg-fixed bg-bottom"
+      className="bg-fill bg-fixed bg-center"
     >
       <Container>
         <main className="grid place-items-center h-[30rem] text-center">
