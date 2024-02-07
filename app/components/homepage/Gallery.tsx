@@ -2,7 +2,6 @@ import React from 'react';
 import Button from '../Button';
 import Image from 'next/image';
 import galleryImage from '../../assets/gallery.jpg';
-import { BiBox } from 'react-icons/bi';
 
 const Gallery = () => {
   return (
@@ -21,9 +20,6 @@ const Gallery = () => {
       </div>
 
       <figure className="relative h-[20rem] md:h-[35rem]">
-        <span className="absolute top-[50%] left-[50%] translate-x-[-50%] text-white text-5xl opacity-50">
-          <BiBox />
-        </span>
         <Image
           className="w-full h-full object-cover"
           src={galleryImage}

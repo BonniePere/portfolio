@@ -21,15 +21,31 @@ const navigationList = [
 ];
 
 const contactList = [
-  { id: 1, path: '+2347000000000', prefix: 'tel:' },
-  { id: 2, path: 'someone@somewhere.com', prefix: 'mailto:' },
+  { id: 1, path: '(646)543-2527', prefix: 'tel:' },
+  { id: 2, path: 'bonnieperez472@proton.me', prefix: 'mailto:' },
 ];
 
 const socialList = [
-  { id: 1, icon: <FaXTwitter />, path: '' },
-  { id: 2, icon: <FaFacebook />, path: '' },
-  { id: 3, icon: <FaLinkedinIn />, path: '' },
-  { id: 4, icon: <FaInstagram />, path: '' },
+  {
+    id: 1,
+    icon: <FaXTwitter />,
+    path: 'https://x.com/bonnieperezds?t=TWT5uaDfhERGLGNuABeViA&s=09',
+  },
+  {
+    id: 2,
+    icon: <FaFacebook />,
+    path: 'https://www.facebook.com/profile.php?id=61553274376677&mibextid=ZbWKwL',
+  },
+  {
+    id: 3,
+    icon: <FaLinkedinIn />,
+    path: 'https://www.linkedin.com/in/bonnie-perez-485ab51b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  },
+  {
+    id: 4,
+    icon: <FaInstagram />,
+    path: 'https://www.instagram.com/bonnieperezds?igsh=MTVkNXY4N25zYWx1NQ==',
+  },
 ];
 
 const Footer = () => {

@@ -6,7 +6,7 @@ import Button from '../components/Button';
 
 const page = () => {
   let inputClasses =
-    'border py-3 px-3 bg-slate-100 outline-none focus:border-primary-100';
+    'border py-3 px-3 bg-slate-100 rounded-0 outline-none focus:border-primary-100';
 
   return (
     <section>
@@ -29,7 +29,7 @@ const page = () => {
           </figure>
 
           <form
-            action="https://formsubmit.co/your@email.com"
+            action="https://formsubmit.co/bonnieperez472@proton.me"
             method="POST"
             className="text-center flex flex-col justify-center py-10 gap-10"
           >
