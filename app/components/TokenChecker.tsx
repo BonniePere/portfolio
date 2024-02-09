@@ -39,11 +39,11 @@ const TokenChecker = () => {
   return (
     <div>
       {show && (
-        <div className="fixed flex items-center justify-stretch top-0 left-0 bg-[#333] h-screen w-screen z-10">
-          <div className="w-full flex flex-col gap-4 items-center justify-center">
+        <div className="fixed flex items-center justify-stretch top-0 left-0 bg-[#333] h-screen w-screen overflow-hidden z-10">
+          <div className="w-full flex flex-col gap-4 items-center justify-center px-5">
             <article className="text-white text-center flex flex-col mb-5 gap-2">
               <h3
-                className={`text-3xl md:text-5xl font-bold ${sacramento.className}`}
+                className={`max-w-[20ch] text-4xl md:text-5xl font-bold ${sacramento.className}`}
               >
                 Welcome, BonniePerez Here!
               </h3>
@@ -57,21 +57,23 @@ const TokenChecker = () => {
               type="text"
               autoFocus
               value={tokenValue}
-              className="text-white bg-transparent border px-5 py-3 outline-none w-[60%]"
+              className="text-white bg-transparent border px-5 py-3 outline-none w-full md:w-[60%]"
               placeholder="Enter access token"
             />
             {error && <div className="text-red-500 text-sm">{error}</div>}
 
-            <Button
-              variation="fill"
-              colorScheme="light"
-              size="md"
-              type="button"
-              title="contact"
-              onClick={handleSubmit}
-            >
-              Submit token
-            </Button>
+            <div className="grid w-full md:w-auto">
+              <Button
+                variation="fill"
+                colorScheme="light"
+                size="md"
+                type="button"
+                title="contact"
+                onClick={handleSubmit}
+              >
+                Submit token
+              </Button>
+            </div>
           </div>
         </div>
       )}
