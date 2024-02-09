@@ -39,7 +39,7 @@ const TokenChecker = () => {
   return (
     <div>
       {show && (
-        <div className="fixed flex items-center justify-stretch top-0 left-0 bg-black h-screen w-screen z-10">
+        <div className="fixed flex items-center justify-stretch top-0 left-0 bg-[#333] h-screen w-screen z-10">
           <div className="w-full flex flex-col gap-4 items-center justify-center">
             <article className="text-white text-center flex flex-col mb-5 gap-2">
               <h3

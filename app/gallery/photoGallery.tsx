@@ -22,7 +22,7 @@ const PhotoGallery = () => {
             key={data.id}
             className="border relative cursor-pointer group"
           >
-            <span className="absolute top-0 left-0 w-full h-full grid place-items-center text-3xl transition-all text-center text-white bg-[rgba(3,3,3,.7)] group-hover:bg-[rgba(3,3,3,.8)]">
+            <span className="absolute top-0 left-0 w-full h-full grid place-items-center text-3xl transition-all text-center text-white bg-[rgba(3,3,3,.2)] group-hover:bg-[rgba(3,3,3,.8)]">
               <h1 className="max-w-[20ch]">{data.title}</h1>
             </span>
             <Image
