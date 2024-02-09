@@ -1,37 +1,26 @@
 'use client';
 
-import React from 'react';
 import Container from '../components/Container';
-import LightGallery from 'lightgallery/react';
-import 'lightgallery/css/lightgallery.css';
-import 'lightgallery/css/lg-zoom.css';
-import 'lightgallery/css/lg-thumbnail.css';
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
-import lgZoom from 'lightgallery/plugins/zoom';
+import PhotoGallery from './photoGallery';
 
 const Gallery = () => {
-  const onInit = () => {
-    console.log('lightGallery has been initialized');
-  };
   return (
     <section className="min-h-screen">
       <Container>
-        <div className="">
-          <article className="py-5 grid gap-2">
-            <h1 className="text-4xl font-bold">Gallery</h1>
+        <div className="grid gap-10 py-10">
+          <article className="py-5 grid gap-4">
+            <h1 className="text-4xl font-bold">
+              Gallery: A Glimpse into My Work
+            </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              tempore nostrum eius.
+              Welcome to a world where function meets style, and every space
+              tells a story. This gallery showcases a selection of my interior
+              design projects, each meticulously crafted to reflect my
+              client&apos;s unique vision and personality.
             </p>
           </article>
 
-          <div className="flex"></div>
-
-          <LightGallery
-            onInit={onInit}
-            speed={500}
-            plugins={[lgThumbnail, lgZoom]}
-          ></LightGallery>
+          <PhotoGallery />
         </div>
       </Container>
     </section>

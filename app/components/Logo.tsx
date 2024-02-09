@@ -1,6 +1,6 @@
-import { Sacramento } from 'next/font/google';
 import Link from 'next/link';
-const architects_daughter = Sacramento({
+import { Sacramento } from 'next/font/google';
+const sacramento = Sacramento({
   subsets: ['latin'],
   weight: '400',
 });
@@ -11,7 +11,7 @@ interface Props {
 
 const Logo = ({ size }: Props) => {
   return (
-    <span className={architects_daughter.className}>
+    <span className={sacramento.className}>
       <Link href="/">
         <div
           style={{

@@ -1,11 +1,5 @@
 import Container from '../Container';
 import headerImage from '../../assets/header.jpg';
-import { Architects_Daughter } from 'next/font/google';
-
-const architects_daughter = Architects_Daughter({
-  subsets: ['latin'],
-  weight: '400',
-});
 
 const Header = () => {
   return (

@@ -13,9 +13,9 @@ const page = () => {
       <Container>
         <section className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] py-10 gap-10">
           <figure className="relative h-[25rem] md:h-[35rem]">
-            <span className="absolute top-[80%] left-[50%] translate-x-[-50%] p-2 bg-black text-white text-5xl opacity-50">
+            <span className="absolute top-[4%] left-[4%] p-2 bg-black text-white text-5xl opacity-50">
               <span className="hidden md:block">
-                <Logo size={2} />
+                <Logo size={1.2} />
               </span>
               <span className="block md:hidden">
                 <Logo size={1.2} />
@@ -33,10 +33,7 @@ const page = () => {
             method="POST"
             className="text-center flex flex-col justify-center py-10 gap-10"
           >
-            <h2 className="text-3xl text-center ">
-              <strong>Contact Bonnie Perez</strong> to <strong>discuss</strong>{' '}
-              your interior <strong>design need</strong>.
-            </h2>
+            <h2 className="text-4xl text-center font-bold">Let&apos;s talk</h2>
             <div className="grid gap-4">
               <input
                 className={inputClasses}

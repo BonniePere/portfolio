@@ -14,16 +14,20 @@ const Services = () => {
       </figure>
 
       <div className="grid place-items-center h-full bg-primary-100 text-white order-1 md:order-2">
-        <article className="flex gap-8 md:gap-10 py-10 flex-col items-start justify-center p-5 md:p-0">
-          <h3 className="text-4xl md:text-5xl">Services</h3>
+        <article className="flex gap-8 md:gap-10 py-10 flex-col items-start justify-center p-5 md:px-5">
+          <h3 className="text-4xl md:text-5xl max-w-[15ch]">
+            Services: Solutions for Functional Living
+          </h3>
           <article className="grid gap-5 text-[#666]">
             <p className="max-w-[100%] md:max-w-[50ch]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              consequatur amet similique vel molestias quisquam cupiditate est
+              More than just decorating, I offer a comprehensive suite of
+              interior design services designed to transform your space and
+              elevate your lifestyle.
             </p>
             <p className="max-w-[100%] md:max-w-[50ch]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              consequatur amet similique vel molestias quisquam cupiditate est
+              From initial consultations to project management and final
+              touches, I provide personalized guidance and expertise every step
+              of the way.
             </p>
           </article>
         </article>

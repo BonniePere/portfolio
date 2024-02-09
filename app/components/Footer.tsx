@@ -61,8 +61,11 @@ const Footer = () => {
             </div>
 
             <p className="max-w-[35ch] text-[#666]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
-              mollitia esse sunt aliquid! Cumque, animi?
+              More than just aesthetics, I believe in creating spaces that
+              nurture well-being, foster connections, and tell your story.
+              Let&apos;s collaborate to build not just a house, but a home that
+              reflects your unique journey and inspires you to live your best
+              life.
             </p>
           </div>
 
